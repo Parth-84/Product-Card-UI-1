@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="card1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="img-box">
+                <img src="./Images/card1/card1_1.png" id="product-img" alt="">
+            </div>
+            <div class="content-box">
+                <h2>Hoodie</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae rerum odit tempora ullam voluptatem.</p>
+                <div class="product-price">
+                    <span>$75.00</span>
+                    <span>$150.00</span>
+                </div>
+                <div class="color-size">
+
+                <div class="color-list">
+                    <span id="c1"class="color-active"></span>
+                    <span id="c2"></span>
+                    <span id="c3"></span>
+                </div>
+                <div class="size-list">
+                    <span id="s1" class="size-active">S</span>
+                    <span id="s2">M</span>
+                    <span id="s3">L</span>
+                    <span id="s4">XL</span>
+                </div>
+
+            </div>
+                <div class="action-buttons">
+                    <a href=""  class="btn atc">Add To Cart</a>
+                    <a href=""  class="btn  bn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box">
+                <img src="./Images/card1/card2_1.png" id="product-img2" alt="">
+            </div>
+            <div class="content-box">
+                <h2>Plain Tees</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae rerum odit tempora ullam voluptatem.</p>
+                <div class="product-price">
+                    <span>$25.00</span>
+                    <span>$50.00</span>
+                </div>
+                <div class="color-size">
+
+                <div class="color-list">
+                    <span id="c1"class="color-class color-active" onclick="changeImage2('./Images/card1/card2_1.png'); addColorClass(event);"></span>
+                    <span id="c2" class="color-class " onclick="changeImage2('./Images/card1/card2_2.png'); addColorClass(event);"></span>
+                    <span id="c3" class="color-class" onclick="changeImage2('./Images/card1/card2_3.png'); addColorClass(event);"></span>
+                </div>
+                <div class="size-list">
+                    <span id="s1" class=" size-class size-active" onclick="addClass(event);">S</span>
+                    <span id="s2" class="size-class" onclick="addClass(event);">M</span>
+                    <span id="s3" class="size-class" onclick="addClass(event);">L</span>
+                    <span id="s4" class="size-class" onclick="addClass(event);">XL</span>
+                </div>
+
+            </div>
+                <div class="action-buttons">
+                    <a href=""  class="btn atc">Add To Cart</a>
+                    <a href=""  class="btn  bn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box">
+                <img src="./Images/card1/card3_1.png" id="product-img3" alt="">
+            </div>
+            <div class="content-box">
+                <h2>Sweatshirts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae rerum odit tempora ullam voluptatem.</p>
+                <div class="product-price">
+                    <span>$50.00</span>
+                    <span>$100.00</span>
+                </div>
+                <div class="color-size">
+
+                <div class="color-list">
+                    <span id="c1"class="color-class2 color-active" onclick="changeImage3('./Images/card1/card3_1.png'); addColorClass2(event);"></span>
+                    <span id="c2" class="color-class2" onclick="changeImage3('./Images/card1/card3_2.png'); addColorClass2(event);"></span>
+                    <span id="c3" class="color-class2" onclick="changeImage3('./Images/card1/card3_3.png'); addColorClass2(event);"></span>
+                </div>
+                <div class="size-list">
+                    <span id="s1" class=" size-class2 size-active" onclick="addClass2(event);">S</span>
+                    <span id="s2" class="size-class2" onclick="addClass2(event);">M</span>
+                    <span id="s3" class="size-class2" onclick="addClass2(event);">L</span>
+                    <span id="s4" class="size-class2" onclick="addClass2(event);">XL</span>
+                </div>
+
+            </div>
+                <div class="action-buttons">
+                    <a href=""  class="btn atc">Add To Cart</a>
+                    <a href=""  class="btn  bn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./card1.js"></script>
+</body>
+</html>
