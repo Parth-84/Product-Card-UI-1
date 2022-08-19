@@ -14,7 +14,7 @@
     <div class="card-container">
         <div class="card">
             <div class="img-box">
-                <img src="./img/card1_1.png" id="product-img" alt="">
+                <img src="./img/card1_1.png" id="product-img1" alt="">
             </div>
             <div class="content-box">
                 <h2>Hoodie</h2>
@@ -26,15 +26,15 @@
                 <div class="color-size">
 
                 <div class="color-list">
-                    <span id="c1"class="color-active"></span>
-                    <span id="c2"></span>
-                    <span id="c3"></span>
+                    <span id="c1" class="color-active" onclick="changeImage('./img/card1_1.png','product-img1',event);"></span>
+                    <span id="c2" onclick="changeImage('./img/card1_2.png','product-img1',event);"></span>
+                    <span id="c3" onclick="changeImage('./img/card1_3.png','product-img1',event);"></span>
                 </div>
                 <div class="size-list">
-                    <span id="s1" class="size-active">S</span>
-                    <span id="s2">M</span>
-                    <span id="s3">L</span>
-                    <span id="s4">XL</span>
+                    <span id="s1" class="size-active" onclick="changeSize(event);">S</span>
+                    <span id="s2" onclick="changeSize(event);">M</span>
+                    <span id="s3" onclick="changeSize(event);">L</span>
+                    <span id="s4" onclick="changeSize(event);">XL</span>
                 </div>
 
             </div>
@@ -58,15 +58,15 @@
                 <div class="color-size">
 
                 <div class="color-list">
-                    <span id="c1"class="color-class color-active" onclick="changeImage2('./img/card2_1.png'); addColorClass(event);"></span>
-                    <span id="c2" class="color-class " onclick="changeImage2('./img/card2_2.png'); addColorClass(event);"></span>
-                    <span id="c3" class="color-class" onclick="changeImage2('./img/card2_3.png'); addColorClass(event);"></span>
+                    <span id="c4"class="color-class color-active" onclick="changeImage('./img/card2_1.png','product-img2',event);"></span>
+                    <span id="c5" class="color-class " onclick="changeImage('./img/card2_2.png','product-img2',event);"></span>
+                    <span id="c6" class="color-class" onclick="changeImage('./img/card2_3.png','product-img2',event);"></span>
                 </div>
                 <div class="size-list">
-                    <span id="s1" class=" size-class size-active" onclick="addClass(event);">S</span>
-                    <span id="s2" class="size-class" onclick="addClass(event);">M</span>
-                    <span id="s3" class="size-class" onclick="addClass(event);">L</span>
-                    <span id="s4" class="size-class" onclick="addClass(event);">XL</span>
+                    <span id="s5" class="size-active"  onclick="changeSize(event);" >S</span>
+                    <span id="s6"  onclick="changeSize(event);">M</span>
+                    <span id="s7" onclick="changeSize(event);" >L</span>
+                    <span id="s8"  onclick="changeSize(event);">XL</span>
                 </div>
 
             </div>
@@ -90,15 +90,15 @@
                 <div class="color-size">
 
                 <div class="color-list">
-                    <span id="c1"class="color-class2 color-active" onclick="changeImage3('./img/card3_1.png'); addColorClass2(event);"></span>
-                    <span id="c2" class="color-class2" onclick="changeImage3('./img/card3_2.png'); addColorClass2(event);"></span>
-                    <span id="c3" class="color-class2" onclick="changeImage3('./img/card3_3.png'); addColorClass2(event);"></span>
+                    <span id="c7"class="color-class2 color-active" onclick="changeImage('./img/card3_1.png','product-img3',event);"></span>
+                    <span id="c8" class="color-class2" onclick="changeImage('./img/card3_2.png','product-img3',event);"></span>
+                    <span id="c9" class="color-class2" onclick="changeImage('./img/card3_3.png','product-img3',event);"></span>
                 </div>
                 <div class="size-list">
-                    <span id="s1" class=" size-class2 size-active" onclick="addClass2(event);">S</span>
-                    <span id="s2" class="size-class2" onclick="addClass2(event);">M</span>
-                    <span id="s3" class="size-class2" onclick="addClass2(event);">L</span>
-                    <span id="s4" class="size-class2" onclick="addClass2(event);">XL</span>
+                    <span id="s9" class="size-active" onclick="changeSize(event);">S</span>
+                    <span id="s10"  onclick="changeSize(event);">M</span>
+                    <span id="s11"  onclick="changeSize(event);">L</span>
+                    <span id="s12"  onclick="changeSize(event);">XL</span>
                 </div>
 
             </div>
