@@ -1,44 +1,29 @@
+//1). Variables for the change color/image function
+let mainColorTarget, colorParentNode, imgbox;
 
-let mainColorTarget,sibling1, sibling2;
-let imgbox;
-
-
+//2). Variables for the size change function
 let mainSizeTarget, sizeParentNode;
 
+
+//Image/Color chnaging function
 function changeImage(imgsrc,imgbox,e){
+
 mainColorTarget = e.target;
+colorParentNode = mainColorTarget.parentNode;
 
-getSpans(mainColorTarget);
-// console.log(mainTarget,sibling1,sibling2);
+let colorSpans = Array.from(colorParentNode.getElementsByTagName('span'));
+
+colorSpans.forEach(element=>{
+    element.classList.remove('color-active');
+});
+
 mainColorTarget.classList.add('color-active');
-sibling1.classList.remove('color-active');
-sibling2.classList.remove('color-active');
-
 imgbox = document.getElementById(`${imgbox}`);
+
 imgbox.src = imgsrc;
 
 }
 
-
-
-//Getting target siblings
-function getSpans(mainColorTarget){
-    if(mainColorTarget.nextElementSibling){
-        sibling1 = mainColorTarget.nextElementSibling;
-        if(sibling1.nextElementSibling){
-            sibling2 = sibling1.nextElementSibling;
-        }
-        else{
-            sibling2 = mainColorTarget.previousElementSibling;
-    
-        }
-    }
-    else{
-        sibling1 = mainColorTarget.previousElementSibling;
-        sibling2 = sibling1.previousElementSibling;
-    }
-
-}
 
 
 
@@ -46,13 +31,11 @@ function getSpans(mainColorTarget){
 function changeSize(e){
     mainSizeTarget = e.target;
     sizeParentNode = mainSizeTarget.parentNode;
-    let spans = Array.from(sizeParentNode.getElementsByTagName('span'));
-    // console.log(spans);
+    let sizeSpans = Array.from(sizeParentNode.getElementsByTagName('span'));
+    // console.log(sizeSpans);
 
-    spans.forEach(element=>{
+    sizeSpans.forEach(element=>{
         element.classList.remove('size-active');
     });
     mainSizeTarget.classList.add('size-active');
 }
-
-//Image changing function can also implemented like size changing function.
